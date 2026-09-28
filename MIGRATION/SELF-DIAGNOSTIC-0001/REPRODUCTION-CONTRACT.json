@@ -1,0 +1,34 @@
+{
+  "artifact_id": "SELF-DIAGNOSTIC-0001",
+  "artifact_kind": "reproducible-diagnostic-evidence",
+  "status": "SOURCE-PRESERVED-AWAITING-RUNTIME-VERIFICATION",
+  "source": {
+    "repository": "Mikhail-Kucheriavyi-23/Gnosis-Core",
+    "commit": "d42ec57166b706f954d7085dec11a938c31c1336",
+    "generator_path": "diagnostic_corpus/generate.py",
+    "generator_blob_sha": "41eef2b7fba364732deff4fd128de340e38fbe81"
+  },
+  "scenario": "controlled-persisted-runtime-history",
+  "expected_properties": {
+    "transition_count": 4,
+    "rejected_count": 3,
+    "accepted_count": 1,
+    "test_rule_id": "test-rule:diagnostic-policy",
+    "persistence": "sqlite_round_trip"
+  },
+  "destination_outputs": [
+    "transitions.json",
+    "metadata.json",
+    "diagnostic.json"
+  ],
+  "verification": {
+    "source_gate": "UNVERIFIED",
+    "destination_runtime_result": "NOT-YET-PRODUCED",
+    "deletion_authorized": false
+  },
+  "trust_boundary": {
+    "authority": "READ_ONLY_EVIDENCE",
+    "canonical_core_state": false,
+    "execution_authority": false
+  }
+}
