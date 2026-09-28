@@ -1,0 +1,33 @@
+{
+  "artifact_id": "SELF-DIAGNOSTIC-0001",
+  "artifact_type": "diagnostic_evidence",
+  "status": "MIGRATION_DESTINATION",
+  "source": {
+    "repository": "Mikhail-Kucheriavyi-23/Gnosis-Core",
+    "baseline_commit": "d42ec57166b706f954d7085dec11a938c31c1336",
+    "generator": "diagnostic_corpus/generate.py",
+    "source_path": "diagnostic_corpus/SELF-DIAGNOSTIC-0001/"
+  },
+  "observation_contract": {
+    "transitions_total": 4,
+    "rejected": 3,
+    "accepted": 1,
+    "durable_persistence": "SQLite",
+    "recovery_required": true,
+    "diagnosis_required": true,
+    "recovered_rule": "test-rule:diagnostic-policy",
+    "durable_graph_verification": true
+  },
+  "authority_boundary": {
+    "canonical_core_state": false,
+    "execution_authority": false,
+    "evidence_only": true,
+    "authoritative_source": "Gnosis-Core"
+  },
+  "migration": {
+    "provenance_manifest": "MIGRATION/SELF-DIAGNOSTIC-0001-PROVENANCE.md",
+    "independent_verification_required": true,
+    "core_ci_update_required": true,
+    "source_deletion_allowed": false
+  }
+}
